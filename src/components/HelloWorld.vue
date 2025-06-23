@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="welcome to Your Vue.js App"/> 
+  <div>
+    <h3>{{ msg }}</h3>
   </div>
 </template>
 
@@ -13,7 +13,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
