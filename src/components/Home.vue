@@ -76,50 +76,36 @@ h2 {
 }
 }
 
- body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            overflow: hidden; /* Mencegah scrollbar muncul jika pantulan melebihi viewport */
-        }
-
-        .bouncing-box {
-            width: 120px;
-            height: 120px;
-            background-color: #7B68EE; /* Warna biru keunguan */
-            border-radius: 15px;
+.bouncing-ball {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6347; /* Warna merah tomat */
+            border-radius: 50%; /* Membuat bentuk lingkaran */
+            position: relative; /* Penting untuk animasi 'top' */
+            animation: bounce 5s infinite ease-in-out; /* Animasi pantul */
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.5em;
+            font-family: sans-serif;
             font-weight: bold;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Memberi efek bayangan */
-
-            /* Properti animasi */
-            animation: bounceUpDown 10s infinite alternate ease-in-out;
-            /* bounceUpDown: nama keyframe
-               10s: durasi total satu siklus (naik dan turun)
-               infinite: berulang terus-menerus
-               alternate: animasi bolak-balik (dari 0% ke 100%, lalu 100% ke 0%)
-               ease-in-out: efek percepatan/perlambatan untuk pantulan yang lebih alami
-            */
+            font-size: 1.2em;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
         }
 
         /* Definisi animasi pantulan */
-        @keyframes bounceUpDown {
+        @keyframes bounce {
             0% {
-                transform: translateY(0); /* Posisi awal (di tempatnya) */
+                top: 0; /* Posisi awal, di tengah secara vertikal */
+                transform: scale(1); /* Ukuran normal */
             }
             50% {
-                transform: translateY(-80px); /* Bergerak ke atas 80px */
+                top: -50px; /* Bergerak 50px ke atas */
+                transform: scale(1.05); /* Sedikit membesar di puncak pantulan */
             }
             100% {
-                transform: translateY(0); /* Kembali ke posisi awal */
+                top: 0; /* Kembali ke posisi awal */
+                transform: scale(1); /* Kembali ke ukuran normal */
             }
         }
 
