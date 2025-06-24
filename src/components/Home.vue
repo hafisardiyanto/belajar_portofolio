@@ -32,23 +32,83 @@ export default {
   align-items: center;
   justify-content: center;
   /* Gradasi cerah */
-  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  background: linear-gradient(135deg,rgb(97, 87, 54) 40%);
 }
 
 h1 {
   color: #333;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: slide-right 8s linear infinite;
+   background: linear-gradient(90deg, #ff512f, #dd2476, #1fa2ff, #12d8fa, #a6ffcb);
+}
+
+ 
+
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
 
 h2 {
-  margin-top: 0;
-  color: #ff6a00;
+  animation: colorChange 15s infinite;
+
+  @keyframes colorChange {
+  40% {
+    color: #ff0000; /* Warna 1: Merah */
+  }
+  33.33% {
+    color: #00ff00; /* Warna 2: Hijau */
+  }
+  66.66% {
+    color: #0000ff; /* Warna 3: Biru */
+  }
+  100% {
+    color: #ff0000; /* Kembali ke Warna 1: Merah */
+  }
+}
 }
 
+h3 {
+  animation: colorChange 10s infinite;
+}
+@keyframes colorChange {
+    0% {
+    color:rgb(12, 243, 4); /* Warna 1: Merah */
+  }
+  33.33% {
+    color:rgb(255, 126, 5); /* Warna 2: Hijau */
+  }
+  }
+
+
 ul {
+   animation: colorChange 10s infinite;
   text-align: left;
   margin: 1em auto;
   max-width: 350px;
-  color:rgb(250, 246, 14)
+
+  @keyframes colorChange {
+    0% {
+    color:rgb(248, 15, 143); /* Warna 1: Merah */
+  }
+  33.33% {
+    color:rgb(202, 255, 9); /* Warna 2: Hijau */
+  }
+  66.66% {
+    color: #0000ff; /* Warna 3: Biru */
+  }
+  100% {
+    color: rgb(248, 15, 143); /* Kembali ke Warna 1: Merah */
+  }
+  }
 }
 
 </style>
