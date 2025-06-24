@@ -76,6 +76,55 @@ h2 {
 }
 }
 
+ body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Mencegah scrollbar muncul jika pantulan melebihi viewport */
+        }
+
+        .bouncing-box {
+            width: 120px;
+            height: 120px;
+            background-color: #7B68EE; /* Warna biru keunguan */
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Memberi efek bayangan */
+
+            /* Properti animasi */
+            animation: bounceUpDown 10s infinite alternate ease-in-out;
+            /* bounceUpDown: nama keyframe
+               10s: durasi total satu siklus (naik dan turun)
+               infinite: berulang terus-menerus
+               alternate: animasi bolak-balik (dari 0% ke 100%, lalu 100% ke 0%)
+               ease-in-out: efek percepatan/perlambatan untuk pantulan yang lebih alami
+            */
+        }
+
+        /* Definisi animasi pantulan */
+        @keyframes bounceUpDown {
+            0% {
+                transform: translateY(0); /* Posisi awal (di tempatnya) */
+            }
+            50% {
+                transform: translateY(-80px); /* Bergerak ke atas 80px */
+            }
+            100% {
+                transform: translateY(0); /* Kembali ke posisi awal */
+            }
+        }
+
+
+
 h3 {
   animation: colorChange 10s infinite;
 }

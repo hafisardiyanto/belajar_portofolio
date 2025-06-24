@@ -2,7 +2,7 @@
 
 <div class="Contact">
 
-<h1>Github:https://github.com/hafisardiyanto</h1>
+<h1>GitHub: <a href="https://github.com/hafisardiyanto" target="_blank" rel="noopener noreferrer">https://github.com/hafisardiyanto</a></h1>
 
 </div>
 
@@ -11,6 +11,6 @@
 
 <script>
 export default {
-  name: 'Contact'
+  name: 'ContactPage'
 }
 </script>
