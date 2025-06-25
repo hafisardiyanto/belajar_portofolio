@@ -5,12 +5,16 @@
 
     <h2>Halo, Saya Hafis Ardiyanto!</h2>
 
-    <h3>Selamat datang di portofolio saya seorang programmer yang berfokus framework laravel </h3>
+    <h3>A web developper</h3>
+
+    <h4>Email<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">hafisardiyanto19@gmail.com</a></h4>
 
     <ul>
-      <li>👨‍💻 Pengalaman membangun aplikasi web modern</li>
-      <li>🚀 Terbiasa dengan pengembangan Frontend & Backend</li>
-      <li>📚 Suka belajar teknologi baru</li>
+      <h5>👨‍💻 Pengalaman membangun aplikasi web modern</h5>
+      <h6> Saya seorang pengembangang web yang </h6>
+      <h7> membangun aplikasi berbasis web </h7>
+      <h8> menggunakan PHP dan JavaScript </h8>
+      <h9> Khususnya Laravel dan JQuery </h9>
     </ul>
 
     
@@ -74,27 +78,8 @@ h2 {
     color: #ff0000; /* Kembali ke Warna 1: Merah */
   }
 }
-}
 
-.bouncing-ball {
-            width: 100px;
-            height: 100px;
-            background-color: #ff6347; /* Warna merah tomat */
-            border-radius: 50%; /* Membuat bentuk lingkaran */
-            position: relative; /* Penting untuk animasi 'top' */
-            animation: bounce 5s infinite ease-in-out; /* Animasi pantul */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size: 1.2em;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-        }
-
-        /* Definisi animasi pantulan */
-        @keyframes bounce {
+          @keyframes bounce {
             0% {
                 top: 0; /* Posisi awal, di tengah secara vertikal */
                 transform: scale(1); /* Ukuran normal */
@@ -108,6 +93,13 @@ h2 {
                 transform: scale(1); /* Kembali ke ukuran normal */
             }
         }
+
+}
+
+
+
+        
+       
 
 
 
@@ -124,7 +116,7 @@ h3 {
   }
 
 
-ul {
+ul,h5,h6,h7,h8,h9 {
    animation: colorChange 10s infinite;
   text-align: left;
   margin: 1em auto;
