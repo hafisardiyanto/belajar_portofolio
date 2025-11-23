@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
 import HomePage from '../components/Home.vue'
 import Contact from '../components/Contact.vue'
@@ -14,23 +14,17 @@ const routes = [
     name: 'Home',
     component: HomePage
   },
-
-  
-{
-  path: '/contact',
-  name: 'Contact',
-  component: Contact
-}
-
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  }
 ]
 
-// import { createRouter, createWebHashHistory } from 'vue-router'
-
 const router = createRouter({
+  // Hash mode supaya aman di GitHub Pages
   history: createWebHashHistory(process.env.BASE_URL),
   routes
 })
-
-
 
 export default router
