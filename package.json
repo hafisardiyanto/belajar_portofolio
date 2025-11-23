@@ -2,9 +2,11 @@
   "name": "belajar_portofolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hafisardiyanto.github.io/belajar_portofolio/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
