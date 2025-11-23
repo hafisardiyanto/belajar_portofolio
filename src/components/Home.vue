@@ -9,13 +9,7 @@
 
     <h4>Email<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">hafisardiyanto19@gmail.com</a></h4>
 
-    <ul>
-      <h5>👨‍💻 Pengalaman membangun aplikasi web modern</h5>
-      <h6> Saya seorang pengembangang web yang </h6>
-      <h7> membangun aplikasi berbasis web </h7>
-      <h8> menggunakan PHP dan JavaScript </h8>
-      
-    </ul>
+    
 
     
 
