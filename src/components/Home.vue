@@ -14,7 +14,7 @@
       <h6> Saya seorang pengembangang web yang </h6>
       <h7> membangun aplikasi berbasis web </h7>
       <h8> menggunakan PHP dan JavaScript </h8>
-      <h9> Khususnya Laravel dan JQuery </h9>
+      
     </ul>
 
     
