@@ -24,9 +24,13 @@ const routes = [
 
 ]
 
+// import { createRouter, createWebHashHistory } from 'vue-router'
+
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes
 })
+
+
 
 export default router
