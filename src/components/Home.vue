@@ -40,14 +40,22 @@ export default {
 }
 
 h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px; /* untuk memperbesar tulisan */
+   text-align: center;
+  margin-top: 40px;
+  font-weight: 700;
   color: #333;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
   animation: slide-right 8s linear infinite;
-   background: linear-gradient(90deg, #ff512f, #dd2476, #1fa2ff, #12d8fa, #a6ffcb);
+  background: linear-gradient(90deg, #ff512f, #dd2476, #1fa2ff, #12d8fa, #a6ffcb);
 }
+
 
  
 
