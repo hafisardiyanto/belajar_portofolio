@@ -7,7 +7,7 @@
 
     <h3>A web developper</h3>
 
-    <h4>Email<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">hafisardiyanto19@gmail.com</a></h4>
+    <h4>Email:<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">hafisardiyanto19@gmail.com</a></h4>
 
     
 
